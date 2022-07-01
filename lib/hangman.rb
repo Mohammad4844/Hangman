@@ -1,3 +1,12 @@
+##
+# A sort of wrapper class for the Game class. This class takes care of the state/save of the game being played,
+# initial setup and loading a save, playing rounds until one of the possible outcomes occur (win/loss/save). It
+# consists of:
+#
+# @game -> an instance of the Game class, the one which is used to play
+# @dictionary -> an array of all the words in the file, it is only populated if a New game is being played
+
+
 class Hangman
   require_relative 'game'
   require_relative 'colorize'
@@ -36,6 +45,8 @@ class Hangman
     end
     end_game_with_loss
   end
+
+  private
 
   def new_game
     load_dictionary
