@@ -9,4 +9,4 @@ Run main.rb to play!
 
 ## Notes
 - This project was made using Ruby, and utilizing OOP concepts
-- Serialization was also used to save a game's progress, speciically JSON
+- Serialization was also used to save a game's progress, specifically JSON
